@@ -63,7 +63,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * @author <a href="mailto:karasek.jose@gmail.com">Josef Karásek</a>
+ * Custom Camel runner for JUnit testing framework. Leverages features of
+ * {@link CamelTestSupport} class, but in looser way. Instead of inheritance
+ * test setup is performed using annotations.
  *
  */
 public class CamelRunner extends BlockJUnit4ClassRunner {
